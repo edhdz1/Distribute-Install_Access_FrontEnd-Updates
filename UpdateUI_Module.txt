@@ -43,12 +43,12 @@ End Function
 
 Public Function myTableFE() As Variant
     'FRONT END VERSION TABLE
-    myTableFE = "USysVersionServer"
+    myTableFE = "USysVersionControl"
 End Function
 
 Public Function myTableBE() As Variant
     'BACK END VERSION TABLE
-    myTableBE = "USysVersionControl"
+    myTableBE = "USysVersionServer"
 End Function
 
 Public Function UpdateUI()
