@@ -1,4 +1,3 @@
-Option Compare Database
 
 '*********************************************************************************
 'Code by: Edgar D Hernandez, LinkedIn: https://www.linkedin.com/in/edgardhernandez1/
