@@ -22,12 +22,6 @@ Option Compare Database
 '
 '*********************************************************************************
 
-'32-Bit
-'Private Declare Function GetUserName Lib "advapi32.dll" Alias "GetUserNameA" (ByVal lpBuffer As String, nSize As Long) As Long
-'Private Declare Function GetComputerName Lib "kernel32" Alias "GetComputerNameA" (ByVal lpBuffer As String, nSize As Long) As Long
-
-'64-Bit
-'Declare PtrSafe Function RegOpenKeyA Lib "advapire32.dll" (ByVal hKey As LongPtr, ByVal lpSubKey As String, phkResult As LongPtr) As Long
 Private Declare PtrSafe Function GetUserName Lib "advapi32.dll" Alias "GetUserNameA" (ByVal lpBuffer As String, nSize As Long) As Long
 Private Declare PtrSafe Function GetComputerName Lib "kernel32" Alias "GetComputerNameA" (ByVal lpBuffer As String, nSize As Long) As Long
 
@@ -483,7 +477,7 @@ On Error GoTo ErrNext
         FormName.[Mandatory].Value = strMandatory
 
 ErrNext:
-    FormName.[Mandatory].Value = False
+    'FormName.[Mandatory].Value = False
     Resume Next
 
 '<!-- /*------------------------------*/ //-->
